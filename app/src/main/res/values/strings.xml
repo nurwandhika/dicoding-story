@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Dicoding Story</string>
+    <string name="app_detail">Dicoding Story Detail</string>
+    <string name="app_addstory">Add Dicoding Story</string>
+    <string name="app_map">Dicoding Story Map</string>
+    <string name="username">Username </string>
+    <string name="widget" translatable="false">Story</string>
+    <string name="story">Story: %1s</string>
+    <string name="welcome">Hello! Welcome</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="email">Input your e-mail here</string>
+    <string name="errormail">Input the correct e-mail format</string>
+    <string name="errorpass">Password 8 character minimum</string>
+    <string name="messageregist">Already have an account?</string>
+    <string name="messagelogin">Dont have an account yet?</string>
+    <string name="name">Input your name here</string>
+    <string name="password">Input your password here</string>
+    <string name="camera">Camera</string>
+    <string name="galery">Gallery</string>
+    <string name="upload">Upload Now</string>
+    <string name="upsuccess">Story uploaded successfully!</string>
+    <string name="exit">Are you sure want exit from application?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="inputdesc">Lets tell your story</string>
+    <string name="datecreate">Date Create</string>
+    <string name="timecreate">Time Create</string>
+    <string name="retry">Retry</string>
+    <string name="locmode">Upload With Location On</string>
+    <string name="map">Clicked location at %1s</string>
+    <string name="emptymail">Email cannot be empty</string>
+    <string name="emptyname">Name cannot be empty</string>
+    <string name="emptypass">Password cannot be empty</string>
+    <string name="emptydesc">Your story cannot be empty</string>
+    <string name="emptyfoto">You need to upload photo</string>
+    <string name="error">Error data not found</string>
+    <string name="logout">Are you sure want to log out?</string>
+    <string name="wait">Please wait</string>
+    <string name="permit">Cannot get permission</string>
+    <string name="login">Login has been successful</string>
+    <string name="regist">Registration has been successful</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fabadd">Floating Button</string>
+</resources>

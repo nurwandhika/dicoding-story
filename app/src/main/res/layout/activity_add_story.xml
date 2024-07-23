@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorOnPrimary"
+    android:id="@+id/addStory"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:theme="@style/Theme.ProjectBangkit1.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.ProjectBangkit1.PopupOverlay">
+
+            <TextView
+                android:id="@+id/custom_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/app_addstory"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/previewImageView"
+        android:layout_width="@dimen/_222sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarlayout"
+        app:srcCompat="@drawable/ic_baseline_image_24"
+        android:contentDescription="@string/app_name"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_177sdp"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:saveEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previewImageView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInput"
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_177sdp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:hint="@string/inputdesc"
+            android:lines="8"
+            android:saveEnabled="true"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/camera"
+        android:layout_width="@dimen/_122sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:text="@string/camera"
+        android:textSize="@dimen/_15sdp"
+        android:backgroundTint="?colorSecondary"
+        app:strokeColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/previewImageView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/gallery"
+        android:layout_width="@dimen/_122sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:text="@string/galery"
+        android:backgroundTint="?colorSecondary"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/previewImageView" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/btnLoc"
+        android:layout_width="@dimen/_263sdp"
+        android:layout_height="wrap_content"
+        android:scaleY="1.2"
+        android:scaleX="1.2"
+        android:saveEnabled="true"
+        android:layout_marginStart="@dimen/_55sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:backgroundTint="?colorOnPrimary"
+        android:text="@string/locmode"
+        android:textColor="?colorSecondaryVariant"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnUpload"
+        android:layout_width="@dimen/_263sdp"
+        android:layout_height="@dimen/_44sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="@string/upload"
+        android:backgroundTint="?colorSecondary"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoc" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

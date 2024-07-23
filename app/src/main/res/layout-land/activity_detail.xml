@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorOnPrimary">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:theme="@style/Theme.ProjectBangkit1.AppBarOverlay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/Theme.ProjectBangkit1.PopupOverlay">
+
+                <TextView
+                    android:id="@+id/custom_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/app_detail"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="20dp"
+                    android:textSize="20sp" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_133sdp"
+            android:background="?colorPrimaryVariant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbarlayout" />
+
+        <ImageView
+            android:transitionName="image"
+            android:id="@+id/image"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="120dp"
+            android:layout_marginStart="@dimen/_33sdp"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbarlayout"
+            app:layout_constraintVertical_bias="1.0"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:transitionName="name"
+            android:id="@+id/nama"
+            android:layout_width="@dimen/_380sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="sans-serif-black"
+            android:ellipsize="marquee"
+            android:textColor="?colorSecondaryVariant"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarlayout" />
+
+        <TextView
+            android:id="@+id/datecreate"
+            android:layout_width="@dimen/_380sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/datecreate"
+            android:fontFamily="sans-serif-medium"
+            android:scrollbars = "horizontal"
+            android:ellipsize="marquee"
+            android:maxLines="1"
+            android:textColor="?colorSecondaryVariant"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@+id/nama" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="@dimen/_380sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:fontFamily="sans-serif-medium"
+            android:scrollbars = "horizontal"
+            android:ellipsize="marquee"
+            android:maxLines="1"
+            android:textColor="?colorSecondaryVariant"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@+id/datecreate" />
+
+        <TextView
+            android:id="@+id/timecreate"
+            android:layout_width="@dimen/_380sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:text="@string/timecreate"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="?colorSecondaryVariant"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@+id/date" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="@dimen/_380sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="?colorSecondaryVariant"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@+id/timecreate" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="?colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewPager2"
+            app:tabTextColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="@dimen/_480sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="@dimen/_12sdp"
+            android:textAlignment="textStart"
+            android:textColor="?colorSecondaryVariant"
+            android:textSize="16sp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabs" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/viewPager2"
+            app:layout_constraintTop_toBottomOf="@+id/viewPager2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

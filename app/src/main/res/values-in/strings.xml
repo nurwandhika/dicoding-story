@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cerita Dicoding</string>
+    <string name="app_detail">Detail Cerita Dicoding</string>
+    <string name="app_addstory">Tambah Cerita Dicoding</string>
+    <string name="app_map">Peta Cerita Dicoding</string>
+    <string name="username">Username </string>
+    <string name="story">Cerita: %1s</string>
+    <string name="welcome">Halo! Selamat Datang</string>
+    <string name="signin">Masuk</string>
+    <string name="signup">Daftar</string>
+    <string name="email">Masukkan E-mail anda</string>
+    <string name="errormail">Tolong masukkan email yang sesuai</string>
+    <string name="errorpass">Password minimal 8 karakter</string>
+    <string name="messageregist">Sudah punya akun?</string>
+    <string name="messagelogin">Belum punya akun?</string>
+    <string name="name">Masukkan Nama Lengkap anda</string>
+    <string name="password">Masukkan password anda</string>
+    <string name="camera">Kamera</string>
+    <string name="galery">Galeri</string>
+    <string name="upload">Unggah Sekarang</string>
+    <string name="upsuccess">Cerita berhasil diunggah!</string>
+    <string name="exit">Ingin keluar dari aplikasi?</string>
+    <string name="yes">Iya</string>
+    <string name="no">Tidak</string>
+    <string name="inputdesc">Mari ceritakan kisahmu</string>
+    <string name="datecreate">Date Create</string>
+    <string name="timecreate">Time Create</string>
+    <string name="retry">Ulang</string>
+    <string name="locmode">Unggah dengan Lokasi</string>
+    <string name="map">Lokasi terletak pada %1s</string>
+    <string name="emptymail">Email tidak boleh kosong</string>
+    <string name="emptyname">Nama tidak boleh kosong</string>
+    <string name="emptypass">Password tidak boleh kosong</string>
+    <string name="emptydesc">Cerita tidak boleh kosong</string>
+    <string name="emptyfoto">Foto tidak boleh kosong</string>
+    <string name="permit">Tidak mendapatkan permission</string>
+    <string name="error">Error data tidak ditemukan</string>
+    <string name="logout">Apakah yakin ingin keluar akun?</string>
+    <string name="wait">Mohon menunggu</string>
+    <string name="login">Login telah berhasil</string>
+    <string name="regist">Registrasi telah berhasil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fabadd">Floating Button</string>
+</resources>

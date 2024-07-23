@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black2"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_33sdp"
+            android:adjustViewBounds="true"
+            android:text="@string/username"
+            android:textSize="20sp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:layout_width="@dimen/_2ssp"
+            android:layout_height="@dimen/_33sdp"
+            android:background="@color/green"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="@dimen/_152sdp"
+            android:layout_height="@dimen/_33sdp"
+            android:adjustViewBounds="true"
+            android:textSize="20sp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="@dimen/_288sdp"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@color/green"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black2"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_33sdp"
+            android:adjustViewBounds="true"
+            android:text="@string/widget"
+            android:textSize="20sp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_33sdp"
+            android:background="@color/green"/>
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="@dimen/_152sdp"
+            android:layout_height="@dimen/_33sdp"
+            android:adjustViewBounds="true"
+            android:textSize="20sp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+</LinearLayout>

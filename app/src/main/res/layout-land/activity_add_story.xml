@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/addStory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorOnPrimary"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:theme="@style/Theme.ProjectBangkit1.AppBarOverlay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/Theme.ProjectBangkit1.PopupOverlay">
+
+                <TextView
+                    android:id="@+id/custom_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/app_addstory"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ImageView
+            android:id="@+id/previewImageView"
+            android:layout_width="@dimen/_222sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_23sdp"
+            android:contentDescription="@string/story"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarlayout"
+            app:srcCompat="@drawable/ic_baseline_image_24" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/btnLoc"
+            android:saveEnabled="true"
+            android:layout_width="@dimen/_263sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_marginStart="@dimen/_100sdp"
+            android:backgroundTint="?colorOnPrimary"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:text="@string/locmode"
+            android:textColor="?colorSecondaryVariant"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintEnd_toEndOf="@+id/previewImageView"
+            app:layout_constraintStart_toStartOf="@+id/previewImageView"
+            app:layout_constraintTop_toBottomOf="@+id/previewImageView" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_155sdp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:saveEnabled="true"
+            app:layout_constraintStart_toEndOf="@+id/previewImageView"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarlayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInput"
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="@dimen/_177sdp"
+                android:gravity="top"
+                android:hint="@string/inputdesc"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:saveEnabled="true"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/camera"
+            android:layout_width="@dimen/_122sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:text="@string/camera"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarlayout" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/gallery"
+            android:layout_width="@dimen/_122sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/_11ssp"
+            android:text="@string/galery"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+            app:layout_constraintStart_toEndOf="@+id/camera"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarlayout" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUpload"
+            android:layout_width="@dimen/_263sdp"
+            android:layout_height="@dimen/_44sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/upload"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/btnUpload"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
